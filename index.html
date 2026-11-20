@@ -1,15 +1,15 @@
 <!--Unit 4 Project
 Requirements
-[ ] Three Distinct CSS font-family Declarations
-[ ] Five CSS Rules
-[ ] An Unordered **or** Ordered List (<ul> or <ol>)
-[ ] Three Images
+[ x ] Three Distinct CSS font-family Declarations
+[ x ] Five CSS Rules
+[ x ] An Unordered **or** Ordered List (<ul> or <ol>)
+[ x ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Fill Text with Image Background 
 [ no ] Feature 2 - Change the <li> markers
 [ no ] Feature 3 - Change the Favicon
-[ no ] Feature 4 - Use Google Font or Uploaded Font
+[ yes ] Feature 4 - Use Google Font or Uploaded Font
 [ no ] Feature 5 - Change the Cursor
 -->
 
@@ -19,8 +19,40 @@ Select ONE Additional Feature to Add
 <head>
   <title>A Guide to the Best Icecream</title>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
   <style>
+    body {
+      background-color: lightblue;
+      font-family: Georgia, serif;
+      margin: 20px;
+    }
 
+    h1 {
+      color: darkblue;
+      font-family: "Pacifico", cursive;
+      text-align: center;
+    }
+
+    h3 {
+      color: darkslategray;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    p {
+      max-width: 700px;
+      line-height: 1.5;
+    }
+
+    ul {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .flavor-image {
+      width: 220px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
@@ -28,21 +60,43 @@ Select ONE Additional Feature to Add
   <h1>A Guide to the Best Icecream</h1>
   
   <h3>Vanilla Icecream</h3>
-  <hr>
+  
+  <img class="flavor-image" src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80" alt="A scoop of vanilla ice cream">
   <p>Vanilla ice cream is a classic because its smooth, creamy flavor is comforting and goes well with almost everything.</p>
-  <p><strong>Toppings:</strong> Hot fudge, caramel, sprinkles, fresh berries, or whipped cream.</p>
+  <p><strong>Toppings:</strong></p>
+  <ul>
+    <li>Hot fudge</li>
+    <li>Caramel</li>
+    <li>Sprinkles</li>
+    <li>Fresh berries</li>
+  </ul>
   <br><br>
 
   <h3>Chocolate</h3>
-  <hr>
+  
+  <img class="flavor-image" src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Chocolate ice cream with toppings">
+
   <p>Chocolate ice cream is rich and deeply flavored, making it a satisfying choice for chocolate lovers.</p>
-  <p><strong>Toppings:</strong> Chocolate syrup, cookie pieces, nuts, marshmallows, or chocolate chips.</p>
+  <p><strong>Toppings:</strong></p>
+  <ul>
+    <li>Chocolate syrup</li>
+    <li>Cookie pieces</li>
+    <li>Nuts</li>
+    <li>Marshmallows</li>
+  </ul>
   <br><br>
 
   <h3>Banana Pudding</h3>
-  <hr>
+
+  <img class="flavor-image" src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=600&q=80" alt="A creamy dessert topped with cookies and bananas">
   <p>Banana pudding ice cream is a fun Southern-inspired flavor with sweet bananas, creamy pudding, and soft cookie pieces.</p>
-  <p><strong>Toppings:</strong> Crushed vanilla wafers, sliced bananas, whipped cream, or caramel sauce.</p>
+  <p><strong>Toppings:</strong></p>
+  <ul>
+    <li>Crushed vanilla wafers</li>
+    <li>Sliced bananas</li>
+    <li>Whipped cream</li>
+    <li>Caramel sauce</li>
+  </ul>
   <br><br>
 
 </body>
